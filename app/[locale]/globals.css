@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.active {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #141414;
+}
+
+.main-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.post-container {
+  display: flex;
+  height: fit-content;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-container:hover {
+  background-color: #47474750;
+  box-shadow: 0 0 3px 1px #3d3d3d;
+}
+
+section.project-container:hover .post-container:not(:hover) {
+  opacity: 0.5;
+}
+
+.text-link {
+  color: #ffffff;
+  font-weight: 900;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.text-link:hover {
+  color: #e9b588;
+}
+
+#about,
+#experience,
+#project {
+  margin-bottom: 96px;
+  scroll-margin-top: 96px;
+}

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #e9b58820; /* 自定義背景色，例如金黃色 */
+  color: #e9b588; /* 自定義文字色，例如黑色 */
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -35,6 +40,10 @@ body {
 }
 
 section.project-container:hover .post-container:not(:hover) {
+  opacity: 0.5;
+}
+
+section.experience-container:hover .post-container:not(:hover) {
   opacity: 0.5;
 }
 

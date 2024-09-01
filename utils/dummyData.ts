@@ -21,7 +21,7 @@ export const ProjectData = [
     tools: ["React", "TypeScript", "React-Router", "Scss", "Axios"],
   },
   {
-    imageSrc: "/MovieHub.JPG",
+    imageSrc: "/AlphaCast.png",
     title: "ALPHA CAST",
     content: "alphaCast-content",
     href: "",
@@ -54,9 +54,18 @@ export const ExperienceData = [
     ],
   },
   {
-    time: "2022 一 Jan 2023",
-    title: "kaoyi-title",
-    content: "kaoyi-content",
-    tools: ["MasterCam X5", "AutoCAD"],
+    time: "May 2023 一 Oct",
+    title: "aplhaCamp-title",
+    content: "alphaCamp-content",
+    href: "https://tw.alphacamp.co/",
+    tools: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+    ],
   },
 ];

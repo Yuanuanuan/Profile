@@ -12,7 +12,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
   return (
     <main className="flex gap-4 mx-auto max-w-[1280px] h-[100vh] px-24 relative overflow-y-scroll main-wrapper">
       <Langauge />
-      <LeftSide />
+      <LeftSide t={t} />
       <RightSide t={t} />
     </main>
   );

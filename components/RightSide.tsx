@@ -2,6 +2,7 @@ import { TFunction } from "i18next";
 import Introduce from "./Introduce";
 import Experience from "./Experience/Experience";
 import Project from "./Project/Project";
+import RightSideFooter from "./RightSideFooter";
 
 interface RightSideProps {
   t: TFunction<any, undefined>;
@@ -13,6 +14,7 @@ export default async function RightSide({ t }: RightSideProps) {
       <Introduce t={t} />
       <Experience t={t} />
       <Project t={t} />
+      <RightSideFooter />
     </section>
   );
 }

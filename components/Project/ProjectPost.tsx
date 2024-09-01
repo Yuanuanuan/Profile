@@ -23,7 +23,7 @@ export default function ProjectPost({ data, t }: ProjectData) {
     <div className="post-container group">
       <div className="w-[130px] h-[70px] m-4 relative border-2 border-gray-800 rounded group-hover:border-gray-600">
         <Image
-          src={data.imageSrc}
+          src={`/images${data.imageSrc}`}
           alt="project image"
           fill
           sizes="126px, 66px"
@@ -32,7 +32,9 @@ export default function ProjectPost({ data, t }: ProjectData) {
         />
       </div>
       <div className="flex flex-col flex-1 py-3 pr-4 pl-0">
-        <h3 className="font-bold mb-2">{data.title}</h3>
+        <h3 className="font-bold mb-2 group-hover:text-primary">
+          {data.title}
+        </h3>
         <p className="text-gray-400 mb-3 text-sm">
           <Trans i18nKey={data.content} components={TransComponents}>
             {t(data.content)}

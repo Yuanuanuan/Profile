@@ -13,10 +13,10 @@ export default function LeftSide({ t }: LeftSideProps) {
   return (
     <section className="w-1/2 sticky top-0 flex flex-col justify-between py-24">
       <header>
-        <h1 className="text-4xl font-black tracking-tight text-white font-inter">
+        <h1 className="text-5xl font-black tracking-tight text-white font-inter">
           TzuYuan Kao
         </h1>
-        <h2 className="mt-3 text-lg font-bold tracking-tight text-white">
+        <h2 className="mt-3 text-2xl font-bold tracking-tight text-white">
           Frontend Developer
         </h2>
         <p className="text-gray-400 mt-4 w-4/5">

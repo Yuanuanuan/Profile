@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
-import { fallbackLng, languages, cookieName } from "@/i18n/settings";
+import { languages, cookieName } from "@/i18n/settings";
 
 acceptLanguage.languages(languages);
 
@@ -12,8 +12,7 @@ export function middleware(req: NextRequest) {
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName)!.value);
-  if (!lng) lng = acceptLanguage.get(req.headers.get("Accept-Language"));
-  if (!lng) lng = fallbackLng;
+  if (!lng) lng = "en";
 
   if (
     !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&

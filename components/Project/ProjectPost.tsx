@@ -24,11 +24,11 @@ export default function ProjectPost({ data, t }: ProjectData) {
       <div className="w-[130px] h-[70px] m-4 relative border-2 border-gray-800 rounded group-hover:border-gray-600">
         <Image
           src={`/images${data.imageSrc}`}
+          style={{ objectFit: "cover" }}
           alt="project image"
           fill
           sizes="126px, 66px"
           quality={40}
-          objectFit="cover"
         />
       </div>
       <div className="flex flex-col flex-1 py-3 pr-4 pl-0">

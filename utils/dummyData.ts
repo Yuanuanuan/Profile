@@ -38,7 +38,7 @@ export const ProjectData = [
 
 export const ExperienceData = [
   {
-    time: "Aug 2023 一 Now",
+    time: "Dec 2023 一 Now",
     title: "yesee-title",
     content: "yesee-content",
     href: "https://www.yesee.com.tw/",

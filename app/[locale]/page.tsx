@@ -10,7 +10,7 @@ interface HomeProps {
 export default async function Home({ params: { locale } }: HomeProps) {
   const { t } = await useTranslation(locale, "common");
   return (
-    <main className="flex gap-4 mx-auto max-w-[1280px] h-[100vh] px-24 relative overflow-y-scroll main-wrapper">
+    <main className="300:px-4 xs:px-6 sm:px-10 sm:pb-10 md:px-24 lg:px-24 lg:flex gap-4 mx-auto max-w-[1280px] h-[100vh] relative overflow-y-scroll main-wrapper">
       <Langauge />
       <LeftSide t={t} />
       <RightSide t={t} />

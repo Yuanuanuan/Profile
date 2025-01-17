@@ -18,9 +18,11 @@ export default function ExperiencePost({ data, t }: ExperienceData) {
 
   let experienceJSX = (
     <div className="post-container group">
-      <div className="w-[162px] text-sm pl-4 pt-4">{data.time}</div>
+      <div className="xs:text-md xs:w-full xs:font-bold 700:text-[15px] 700:w-[162px] 700:text-sm  lg:pl-4 pt-4">
+        {data.time}
+      </div>
       <div className="flex flex-col flex-1 py-3 pr-4 pl-0">
-        <h3 className="font-bold mb-2 text-white group-hover:text-primary">
+        <h3 className="font-bold mb-2 text-white lg:group-hover:text-primary">
           {t(data.title)}
         </h3>
         <p className="text-gray-400 mb-3 text-sm">

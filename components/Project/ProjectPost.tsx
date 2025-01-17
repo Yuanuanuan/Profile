@@ -21,7 +21,7 @@ export default function ProjectPost({ data, t }: ProjectData) {
 
   let returnJSX = (
     <div className="post-container group">
-      <div className="w-[130px] h-[70px] m-4 relative border-2 border-gray-800 rounded group-hover:border-gray-600">
+      <div className="w-[130px] h-[70px] 700:m-4 relative border-2 border-gray-800 rounded group-hover:border-gray-600">
         <Image
           src={`/images${data.imageSrc}`}
           style={{ objectFit: "cover" }}
@@ -32,7 +32,7 @@ export default function ProjectPost({ data, t }: ProjectData) {
         />
       </div>
       <div className="flex flex-col flex-1 py-3 pr-4 pl-0">
-        <h3 className="font-bold mb-2 group-hover:text-primary">
+        <h3 className="font-bold mb-2 lg:group-hover:text-primary">
           {data.title}
         </h3>
         <p className="text-gray-400 mb-3 text-sm">

@@ -10,7 +10,7 @@ interface RightSideProps {
 
 export default async function RightSide({ t }: RightSideProps) {
   return (
-    <section className="w-1/2 h-fit py-24 text-white">
+    <section className="300:py-10 xs:py-16 md:w-full lg:py-24 lg:w-1/2 h-fit text-white">
       <Introduce t={t} />
       <Experience t={t} />
       <Project t={t} />

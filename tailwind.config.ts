@@ -12,6 +12,12 @@ const config: Config = {
         white: "#f0f0f0",
         primary: "#e9b588",
       },
+      screens: {
+        xs: "480px",
+        lg: "1180px",
+        "700": "700px",
+        "300": "300px",
+      },
     },
   },
   plugins: [],

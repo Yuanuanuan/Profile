@@ -10,20 +10,21 @@ interface LeftSideProps {
 
 export default function LeftSide({ t }: LeftSideProps) {
   const mailtoLink = "mailto:asdll6618@gmail.com";
+
   return (
-    <section className="w-1/2 sticky top-0 flex flex-col justify-between py-24">
+    <section className="300:pt-12 sm:pt-12 md:pt-24 md:w-full lg:sticky lg:w-1/2 lg:py-24 top-0 flex flex-col justify-between">
       <header>
-        <h1 className="text-5xl font-black tracking-tight text-white font-inter">
+        <h1 className="300:text-3xl sm:text-5xl font-black tracking-tight text-white font-inter">
           TzuYuan Kao
         </h1>
-        <h2 className="mt-3 text-2xl font-bold tracking-tight text-white">
+        <h2 className="300:text-lg sm:text-2xl mt-3 font-bold tracking-tight text-white">
           Frontend Developer
         </h2>
-        <p className="text-gray-400 mt-4 w-4/5">
+        <p className="md:w-3/5 lg:w-4/5 w-full text-gray-400 mt-4">
           <Trans i18nKey={"about"}>{t("about")}</Trans>
         </p>
       </header>
-      <footer className="flex gap-6">
+      <footer className="300:mt-5 sm:mt-10 md:mt-10 flex gap-6 justify-start ">
         <a href={mailtoLink}>
           <Email />
         </a>

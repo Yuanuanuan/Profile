@@ -1,6 +1,6 @@
 export default function RightSideFooter() {
   return (
-    <footer className="text-zinc-500">
+    <footer className="text-zinc-500 300:text-xs xs:text-md">
       Build with &nbsp;
       <a
         className="text-zinc-400 font-bold cursor-pointer transition-colors hover:text-primary"

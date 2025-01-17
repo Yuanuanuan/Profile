@@ -26,36 +26,51 @@ body {
   display: none;
 }
 
-.post-container {
-  display: flex;
-  height: fit-content;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+@media screen and (min-width: 700px) {
+  .post-container {
+    display: flex;
+    height: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
 }
 
-.post-container:hover {
-  background-color: #47474750;
-  box-shadow: 0 0 3px 1px #3d3d3d;
+@media screen and (min-width: 1180px) {
+  .post-container:hover {
+    background-color: #47474750;
+    box-shadow: 0 0 3px 1px #3d3d3d;
+  }
+
+  section.project-container:hover .post-container:not(:hover) {
+    opacity: 0.5;
+  }
+
+  section.experience-container:hover .post-container:not(:hover) {
+    opacity: 0.5;
+  }
 }
 
-section.project-container:hover .post-container:not(:hover) {
-  opacity: 0.5;
+@media screen and (min-width: 1180px) {
+  .text-link:hover {
+    color: #e9b588;
+  }
+
+  .text-link {
+    color: #ffffff;
+    font-weight: 900;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+  }
 }
 
-section.experience-container:hover .post-container:not(:hover) {
-  opacity: 0.5;
-}
-
-.text-link {
-  color: #ffffff;
-  font-weight: 900;
-  transition: color 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.text-link:hover {
-  color: #e9b588;
+@media screen and (max-width: 1179px) {
+  .text-link {
+    color: #e9b588;
+    font-weight: 900;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+  }
 }
 
 #about,

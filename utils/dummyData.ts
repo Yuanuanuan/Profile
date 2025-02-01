@@ -1,5 +1,12 @@
 export const ProjectData = [
   {
+    imageSrc: "/arcade.JPG",
+    title: "Arcade",
+    content: "arcade-content",
+    href: "https://arcade-yuan.vercel.app/",
+    tools: ["Astro", "TypeScript", "Three.js", "Vercel"],
+  },
+  {
     imageSrc: "/MovieHub.JPG",
     title: "MovieHub",
     content: "movieHub-content",

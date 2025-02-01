@@ -1,8 +1,11 @@
 import Instagram from "@/components/icons/Instagram";
 import Github from "@/components/icons/Github";
-import Email from "./icons/Email";
+import Email from "@/components/icons/Email";
+import Linkin from "@/components/icons/Linkin";
 import { TFunction } from "i18next";
 import { Trans } from "react-i18next/TransWithoutContext";
+import Image from "next/image";
+import CakeResume from "./icons/CakeResume";
 
 interface LeftSideProps {
   t: TFunction<any, undefined>;
@@ -33,6 +36,19 @@ export default function LeftSide({ t }: LeftSideProps) {
         </a>
         <a href="https://github.com/Yuanuanuan" target="_blank">
           <Github />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tzuyuan-kao-130770280/"
+          target="_blank"
+        >
+          <Linkin />
+        </a>
+        <a
+          href="https://www.cake.me/me/asdll6618"
+          target="_blank"
+          className="w-6 h-6"
+        >
+          <CakeResume />
         </a>
       </footer>
     </section>

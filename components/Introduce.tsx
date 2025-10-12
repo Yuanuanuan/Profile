@@ -13,7 +13,7 @@ export default function Introduce({ t }: { t: TFunction<any, undefined> }) {
 
   return (
     <article id="about">
-      <h2 className="text-3xl font-bold mb-5">Introduce_</h2>
+      <h2 className="text-3xl font-bold mb-5 text-primary">Introduce_</h2>
       <p className="text-gray-400 xs:text-[14px]">
         <Trans i18nKey="introduce" components={TransComponents}>
           {t("introduce")}

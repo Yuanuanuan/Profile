@@ -17,11 +17,11 @@ export default function LeftSide({ t }: LeftSideProps) {
   return (
     <section className="300:pt-12 sm:pt-12 md:pt-24 md:w-full lg:sticky lg:w-1/2 lg:py-24 top-0 flex flex-col justify-between">
       <header>
-        <h1 className="300:text-3xl sm:text-5xl font-black tracking-tight text-white font-inter">
+        <h1 className="300:text-3xl sm:text-5xl font-black tracking-tight text-primary font-inter">
           TzuYuan Kao
         </h1>
         <h2 className="300:text-lg sm:text-2xl mt-3 font-bold tracking-tight text-white">
-          Frontend Developer
+          Software Engineer - Frontend
         </h2>
         <p className="md:w-3/5 lg:w-4/5 w-full text-gray-400 mt-4">
           <Trans i18nKey={"about"}>{t("about")}</Trans>
